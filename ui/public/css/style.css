@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+button {
+  border: none;
+}
+@keyframes fadeout {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+#container {
+  animation: fadeout 0.5s linear forwards;
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  min-height: 80vh;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  color: #303133;
+  transition: 0.3s;
+  background: #fff;
+}
+#container .after_add,
+#container .after_home,
+#container .after_del {
+  display: none;
+}
+#container.home .after_home,
+#container.add .after_add,
+#container.del .after_del,
+#container.show .after_show {
+  display: block;
+}
+#container .after_home {
+  text-align: center;
+}
+#container .after_home h1 {
+  padding: 20px 0;
+}
+#container .after_home .menus {
+  padding: 20px 0;
+}
+#container .after_home .show-num {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+#container .after_home .show-num #surplus {
+  color: #f90;
+  font-size: 40px;
+  text-decoration: underline;
+}
+#container .after_add {
+  width: 50%;
+  margin: 0 auto;
+}
+#container .after_del {
+  text-align: center;
+}
+#container .after_del .btn {
+  width: 20%;
+}
+#container .after_show table,
+#container .after_show tr,
+#container .after_show th,
+#container .after_show td {
+  border-collapse: collapse;
+  border: 1px solid #333;
+}
+#container .after_show table {
+  width: 100%;
+}
+#container .btn {
+  color: #fff;
+  border-radius: 15px;
+  background: #42a2eb;
+  box-shadow: inset 24px -24px 47px #3685c1, inset -24px 24px 47px #4ebfff;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#container .btn:hover {
+  background-color: #000000;
+}
+#container .btn-submit {
+  background: #42eb99;
+  box-shadow: inset 24px -24px 47px #36c17d, inset -24px 24px 47px #4effb5;
+}
+#container .text-right {
+  text-align: right;
+}
+#container form {
+  border: 1px solid #3685c1;
+  padding: 20px;
+  border-radius: 5px;
+}
+#container .form-group {
+  margin-bottom: 10px;
+}
+#container .form-group .form-control {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#container .btn {
+  width: 25%;
+}
+.header {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.footer {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #444;
+}
